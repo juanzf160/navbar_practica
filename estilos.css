@@ -1,0 +1,65 @@
+/* fuente importada desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&family=Fraunces:opsz@9..144&family=Karla:wght@200;400&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Poppins:wght@200;400;600&family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+body {
+    background-color: #fff59d;
+}
+/* color de fondo - flexbox  */
+.header {
+    background-color: #6C2C2C;
+    display: flex; 
+    justify-content: space-between;
+    /* alinea mis <li> en el centro de nuestra caja */
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo {
+     /* La flecha se convierte en mano al pasar el cursor  */
+    cursor: pointer;
+}
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+.header .nav-links {
+    list-style: none;
+}
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+.header .nav-links a {
+    /* no se en que influye, probe varios valores y no cambia nada  */
+   font-size: 700;
+   color: #F3F1F1; 
+   text-decoration: none;
+}
+.header .nav-links a:hover {
+    color: #9ADA28;
+}
+.header .btn button {
+    font-weight: 700;
+    color: #272C1F;
+    padding: 9px 25px;
+    background-color: #F3F1F1;
+    border: none;
+    /* redondeo de nuestras puntas de caja */
+    border-radius: 50px;  
+    /* La flecha se convierte en mano al pasar el cursor  */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+} 
+.header .btn button:hover {
+    background-color: #272C1F;
+    color: #F3F1F1;
+    transform: scale(1.1);
+}
